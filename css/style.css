@@ -12,7 +12,7 @@ Colors:
 
 main color : #1d2d50;
 second color : #133b5c;
-third color : #1e5f74;
+third color : #1e5f74
 light color : #fcdab7;
 
 ======================================*/
@@ -421,18 +421,18 @@ a {
          Best Sellers
 ------------------------------*/
 
-.best-sellers{
+.best-sellers {
     width: 100vw;
     height: 100vh;
     background-color: yellow;
     padding: 80px;
 }
 
-.head-sellers{
+.head-sellers {
     font-size: 48px;
     color: #03c169;
     font-weight: 800;
-    font-family: 'lato' sans-serif;
+    font-family: 'lato'sans-serif;
     text-align: center;
     letter-spacing: 2px;
     word-spacing: 4px;
@@ -452,7 +452,7 @@ a {
 
 }
 
-.htext{
+.htext {
     color: white;
     font-size: 22px;
     display: flex;
@@ -461,36 +461,39 @@ a {
     justify-content: center;
 }
 
-.htext p{
+.htext p {
     margin: 10px;
 }
 
-.htext p:nth-child(2){
+.htext p:nth-child(2) {
     text-decoration: line-through;
     color: green;
 }
 
-.htext p:nth-child(3){
+.htext p:nth-child(3) {
     background-color: red;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     padding: 10px;
 }
 
-.htext p:nth-child(4){
+.htext p:nth-child(4) {
     color: red;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
     background-color: red;
     padding: 30px;
     transition: all 0.3s ease-in-out;
-    
+
 }
 
-.swiper-button-next:hover, .swiper-button-prev:hover{
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
     background-color: green;
     transform: scale(1.1);
 }
+
 /*------------------------------
          Offers section
 ------------------------------*/
@@ -709,6 +712,7 @@ a {
     padding: 15px;
     margin: 25px;
     color: #fff;
+    font-size: 17px;
 }
 
 .contact-right textarea:focus {
@@ -762,23 +766,80 @@ a {
     align-items: center;
 }
 
-.loader {
-    border-top: 16px solid #1d2d50;
-    border-right: 16px solid #133b5c;
-    border-bottom: 16px solid #1e5f74;
-    border-left: 16px solid #fcdab7;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
+.ldio-lzafw2vmhzs > div > div {
+    transform-origin: 100px 100px;
+    animation: ldio-lzafw2vmhzs 3.0303030303030303s linear infinite;
+    opacity: 0.8
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+.ldio-lzafw2vmhzs > div > div > div {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px 0 0 0;
+    transform-origin: 100px 100px
+}
 
-    100% {
-        transform: rotate(360deg);
-    }
+.ldio-lzafw2vmhzs > div div:nth-child(1) {
+    animation-duration: 0.7575757575757576s
+}
+
+.ldio-lzafw2vmhzs > div div:nth-child(1) > div {
+    background: #133b5c;
+    transform: rotate(0deg);
+}
+
+.ldio-lzafw2vmhzs > div div:nth-child(2) {
+    animation-duration: 1.0101010101010102s
+}
+
+.ldio-lzafw2vmhzs > div div:nth-child(2) > div {
+    background: #1e5f74;
+    transform: rotate(0deg);
+}
+
+.ldio-lzafw2vmhzs > div div:nth-child(3) {
+    animation-duration: 1.5151515151515151s
+}
+
+.ldio-lzafw2vmhzs > div div:nth-child(3) > div {
+    background: #fcdab7;
+    transform: rotate(0deg);
+}
+
+.ldio-lzafw2vmhzs > div div:nth-child(4) {
+    animation-duration: 3.0303030303030303s
+}
+
+.ldio-lzafw2vmhzs > div div:nth-child(4) > div {
+    background: #fe1818;
+    transform: rotate(0deg);
+}
+
+.loadingio-spinner-wedges-m42hi0g761k {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    background: transparent;
+}
+
+.ldio-lzafw2vmhzs {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+}
+
+.ldio-lzafw2vmhzs div {
+    box-sizing: content-box;
+}
+
+@keyframes ldio-lzafw2vmhzs {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
 }
