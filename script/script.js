@@ -79,4 +79,17 @@ $(window).on( "load", function()
         prevEl: '.swiper-button-prev',
       },
   });
+
+
+/* Sweet Alert and Alertify */
+
+function hindipd(){
+    swal("Hindi Pendrive List", "Coming Soon! Stay tune with us");
+}
+
+function engpd(){
+    swal("English Pendrive List", "Coming Soon! Stay tune with us");
+}
+
+
     
