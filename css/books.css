@@ -1,0 +1,305 @@
+body {
+    overflow-x: auto;
+}
+
+.book-list {
+    padding: 100px 40px;
+    background-color: ;
+}
+
+.finding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.finding input {
+    outline: 0;
+    border: 4px solid;
+    border-right: 0;
+    border-bottom-color: red;
+    font-size: 24px;
+    width: 100%;
+    padding: 15px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.finding button {
+    outline: 0;
+    border: 4px solid;
+    border-left: 0px;
+    border-bottom-color: red;
+    font-size: 24px;
+    padding: 15px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.finding button:focus {
+    outline: 0;
+}
+
+.discount {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    right: 35px;
+
+}
+
+.book-cover {}
+
+.books {
+    width: 100%;
+    padding: 20px;
+    background-color: aliceblue;
+    overflow-x: auto;
+
+}
+
+.bt {
+    padding: 20px;
+}
+
+tr {
+    padding: 20px;
+    margin: 10px;
+}
+
+td {
+    border-bottom: 4px solid black;
+}
+
+.books img {
+    height: 180px;
+    width: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.mrp span {
+    text-decoration: line-through;
+}
+
+.price p {
+    font-size: 22px;
+}
+
+.imp-message {
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.check-list a {
+    color: red;
+}
+
+.check-list a:hover {
+    color: red;
+}
+
+@media all and (max-width: 480px) {
+    .discount {
+        position: absolute;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        left: 35px;
+        width: 100px;
+    }
+}
+
+/*------------------------------
+        footer
+------------------------------*/
+
+.foot1 {
+    height: auto;
+    padding: 40px 60px;
+    background-color: #1d1d1d;
+    color: white;
+}
+
+.content1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.content-child1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.content-child1 h2 {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.content-child1 a {
+    text-transform: capitalize;
+    margin: 5px;
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+
+.content-child1 a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.content-child-flex1 {}
+
+.content-child-flex1 a {}
+
+.social-links1 {
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-links1 a {
+    margin: 10px;
+    font-size: 20px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-links1 a:nth-child(1):hover {
+    color: #4267B2;
+    border: 2px solid #1e5f74;
+}
+
+.social-links1 a:nth-child(2):hover {
+    color: #fb3958;
+    border: 2px solid #fb3958;
+}
+
+.social-links1 a:nth-child(3):hover {
+    color: #25D366;
+    border: 2px solid #25D366;
+}
+
+.social-links1 a:nth-child(4):hover {
+    color: #738ADB;
+    border: 2px solid #738ADB;
+}
+
+.social-links1 a:nth-child(5):hover {
+    color: #0088CC;
+    border: 2px solid #0088CC;
+}
+
+.social-links1 a:nth-child(6):hover {
+    color: #0F9D58;
+    border: 2px solid #0F9D58;
+}
+
+.social-links1 a:nth-child(7):hover {
+    color: #00B2FF;
+    border: 2px solid #00B2FF;
+}
+
+.copyright1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.copyright1 a:hover {
+    color: white;
+}
+
+.modal1 {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.59);
+}
+
+.modal-header1,
+.modal-footer1 {
+    background-color: #1d1d1d;
+}
+
+.modal-header1 button,
+.modal-footer1 button {
+    color: white;
+}
+
+.modal-header1 button:hover,
+.modal-footer1 button:hover {
+    color: red;
+}
+
+.modal-body1 {
+    background-color: #e6e6e6;
+    color: black;
+    font-weight: 500;
+}
+
+.modal-body1 a:hover {
+    color: red;
+}
+
+
+
+
+/*------------------------------            
+        Back to top 
+------------------------------*/
+.backtotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: block;
+    cursor: pointer;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    -webkit-box-shadow: 1px 1px 15px -3px #000;
+    box-shadow: 1px 1px 15px -3px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.backtotop div {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.hidden {
+    display: none;
+}

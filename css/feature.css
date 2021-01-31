@@ -1,0 +1,159 @@
+.best-seller1 {
+    height: auto;
+    width: 100%;
+    background-color: #e6e6e6;
+    padding: 70px 30px;
+}
+
+.best-seller1 h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.best-seller1 h1:hover {
+    letter-spacing: 8px;
+    color: #DE354C;
+}
+
+.books-show1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 30px;
+}
+
+.product-card1 {
+    height: auto;
+    width: 300px;
+    color: white;
+    margin: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(126deg, #3c1874, #283747);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 7%
+    }
+
+    50% {
+        background-position: 100% 94%
+    }
+
+    100% {
+        background-position: 0% 7%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 7%
+    }
+
+    50% {
+        background-position: 100% 94%
+    }
+
+    100% {
+        background-position: 0% 7%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 7%
+    }
+
+    50% {
+        background-position: 100% 94%
+    }
+
+    100% {
+        background-position: 0% 7%
+    }
+}
+
+.product-card1 h3 {
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+
+.product-card1 img {
+    height: 250px;
+    width: 200px;
+}
+
+.cost1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cost1 p:first-child {
+    text-decoration: line-through;
+}
+
+.cost1 p:last-child {
+    font-weight: bolder;
+}
+
+.off_prize1 {
+    width: 25rem;
+    border-radius: 1rem;
+    background: 4px 4px 15px rgba(#000, 0.15);
+    position: relative;
+    color: #434343;
+}
+
+.off_prize1::before {
+    position: absolute;
+    top: 1.5rem;
+    right: 6.1rem;
+    content: '';
+    background: #DE354C;
+    height: 28px;
+    width: 28px;
+    transform: rotate(45deg);
+}
+
+.off_prize1::after {
+    position: absolute;
+    content: attr(data-label);
+    top: 0px;
+    right: 85px;
+    padding: 0.5rem;
+    width: 10rem;
+    background: #DE354C;
+    color: white;
+    text-align: center;
+    box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.best-seller1 p a{
+    color: red;
+    text-transform: uppercase;
+}
+
+.best-seller1 p{
+    text-transform: capitalize;
+    font-size: 22px;
+}

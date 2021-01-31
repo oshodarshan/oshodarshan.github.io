@@ -1,0 +1,16 @@
+.mypayment{
+    padding: 100px 40px;
+}
+
+.mypayment p{
+    font-size-adjust: auto;
+    text-align: justify;
+}
+
+.mypayment a{
+    color: red;
+}
+
+.mypayment a:hover{
+    color: red;
+}
