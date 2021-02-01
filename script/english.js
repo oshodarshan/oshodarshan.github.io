@@ -85,10 +85,10 @@ $(document).ready(function () {
             "MAX": "MRP &#8377;",
             "MRP": "1500",
             "sell": "Sale Price &#8377;",
-            "SALEPRICE": "1000",
-            "Discount": "33.3333333333333% OFF",
+            "SALEPRICE": "900",
+            "Discount": "40% OFF",
             "shipper": "Shippping Charge &#8377;",
-            "SHIPPING": ""
+            "SHIPPING": "90"
         },
         {
             "srno": "7",
@@ -98,9 +98,9 @@ $(document).ready(function () {
             "Subject": "Guides To Meditation",
             "Cover": "HB",
             "MAX": "MRP &#8377;",
-            "MRP": "600",
+            "MRP": "750",
             "sell": "Sale Price &#8377;",
-            "SALEPRICE": "480",
+            "SALEPRICE": "600",
             "Discount": "20% OFF",
             "shipper": "Shippping Charge &#8377;",
             "SHIPPING": "60"
@@ -558,7 +558,7 @@ $(document).ready(function () {
         },
         {
             "srno": "38",
-            "ImageURL": "bookImages/myway",
+            "ImageURL": "bookImages/myway.webp",
             "EnglishBookTitleName": "MY WAY: WAY OF THE WHITE CLOUDS",
             "Publication": "Osho Media International",
             "Subject": "Responses To Questions",
@@ -648,7 +648,7 @@ $(document).ready(function () {
         },
         {
             "srno": "44",
-            "ImageURL": "bookImages/book.webp",
+            "ImageURL": "https://m.media-amazon.com/images/I/41Kjb6ImfPL.jpg",
             "EnglishBookTitleName": "Book of Secrets",
             "Publication": "Osho Media International",
             "Subject": "Tantra Masters",
@@ -783,7 +783,7 @@ $(document).ready(function () {
         },
         {
             "srno": "53",
-            "ImageURL": "mystery.webp",
+            "ImageURL": "bookImages/mystery.webp",
             "EnglishBookTitleName": "Yoga: Mystery beyond Mind (Vol. 03)",
             "Publication": "Osho Media International",
             "Subject": "Yoga: Science of soul Series",
@@ -1293,7 +1293,7 @@ $(document).ready(function () {
         },
         {
             "srno": "87",
-            "ImageURL": "bookImages/ancient.webp",
+            "ImageURL": "bookImages/ancient.jpg",
             "EnglishBookTitleName": "ANCIENT MUSIC IN THE PINES",
             "Publication": "Osho Media International",
             "Subject": "Zen Talks",
@@ -1308,7 +1308,7 @@ $(document).ready(function () {
         },
         {
             "srno": "88",
-            "ImageURL": "bookImages/hyazen.webp",
+            "ImageURL": "bookImages/hyazen.jpg",
             "EnglishBookTitleName": "HYAKUJO",
             "Publication": "Osho Media International",
             "Subject": "Zen masters",
@@ -1353,7 +1353,7 @@ $(document).ready(function () {
         },
         {
             "srno": "91",
-            "ImageURL": "bookImages/being_osho.webp",
+            "ImageURL": "bookImages/being_osho.jpg",
             "EnglishBookTitleName": "BEING OSHO",
             "Publication": "Zorba",
             "Subject": "DARSHAN DAIRY",
