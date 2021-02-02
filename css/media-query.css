@@ -117,12 +117,35 @@
     }
 }
 
+@media all and (max-width: 1371px){
+    .heading-image img{
+        width: 550px;
+    }
+}
+
 
 @media all and (max-width: 1290px) {
     .testi{
         height: auto;
     }
          
+}
+
+@media all and (max-width: 1268){
+    .heading-image img{
+        width: 540px;
+    }
+    
+    .heading-text h3{
+        font-size: 30px;
+    }
+    .heading-text a{
+        font-size: 14px;
+    }
+    
+    .oval-text{
+        width: 500px;
+    }
 }
 
 
@@ -174,6 +197,9 @@
     }
     
     .offers {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     
@@ -196,10 +222,14 @@
     }
     
     .contact-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     
     .contact-right {
+        -webkit-clip-path: none;
         clip-path: none;
     }
     .contact-info{
@@ -247,6 +277,8 @@
         font-size: 32px;
     }
     .left-heading img {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
         order: 1;
     }
     
@@ -287,6 +319,8 @@
     }
     
     .heading-text {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         margin: 0;
         margin-top: 20px;
@@ -301,6 +335,9 @@
     }
     
     .about-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         padding: 20px;
         margin-left: 0;
@@ -377,13 +414,25 @@
     .heading-section{
         padding-bottom: 50px; 
         padding-top: 70px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         text-align: center;
     }
     .content{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
     }
@@ -406,6 +455,9 @@
         font-size: 24px;
     }
     .cust-numbers{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
     }
