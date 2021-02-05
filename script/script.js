@@ -181,7 +181,14 @@ for (i = 0; i < coll.length; i++) {
 
 function searchbook() {
     var findBook = document.getElementById("searchbooks").value;
-    window.find(findBook)
+    window.find(findBook);
+}
+
+function findBookonEnter() {
+    if (event.keyCode === 13) {
+        var withenter = document.getElementById("searchbooks").value;
+        window.find(withenter);
+    }
 }
 
 
