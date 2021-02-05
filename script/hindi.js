@@ -383,10 +383,10 @@ $(document).ready(function () {
             "SUBJECT": "DHYAN/SADHANA",
             "COVER": "HB",
             "MAX": "MRP &#8377;",
-            "MRP": "750",
+            "MRP": "975",
             "sell": "Sale Price &#8377;",
-            "SalePrice": "975",
-            "Discount": "-30 % OFF",
+            "SalePrice": "750",
+            "Discount": "23.0769230769231 % OFF",
             "shipper": "Shippping Charge &#8377;",
             "ShippingCharge": "90"
         },
@@ -1247,7 +1247,7 @@ $(document).ready(function () {
         },
         {
             "srno": "84",
-            "ImageUrl": "",
+            "ImageUrl": "https://www.diamondbook.in/media/catalog/product/cache/1/image/270x405/9df78eab33525d08d6e5fb8d27136e95/m/a/mai_mritu_osho_.jpg",
             "HINDIBOOKSTITLENAME": "MAIN MRITU SIKHATA HUN",
             "Publication": "Diamond Pocket Books",
             "SUBJECT": "DHYAN/SADHNA",
@@ -1385,7 +1385,7 @@ $(document).ready(function () {
             "ImageUrl": "bookImages/prashan.webp",
             "HINDIBOOKSTITLENAME": "Bharat Ke Jalte Prashna",
             "Publication": "Diamond Pocket Books",
-            "SUBJECT": "Rajneeti & Shiksha",
+            "SUBJECT": "Rajneeti & Samaj",
             "COVER": "HB",
             "MAX": "MRP &#8377;",
             "MRP": "500",
@@ -1895,7 +1895,7 @@ $(document).ready(function () {
             "ImageUrl": "https://images-na.ssl-images-amazon.com/images/I/414WRVddPJL._SX345_BO1,204,203,200_.jpg",
             "HINDIBOOKSTITLENAME": "SATYA ASATYA",
             "Publication": "Sadhana publication",
-            "SUBJECT": "CHWANGTSU",
+            "SUBJECT": "CHWANG TZU",
             "COVER": "PB",
             "MAX": "MRP &#8377;",
             "MRP": "150",
@@ -2008,7 +2008,7 @@ $(document).ready(function () {
             "SalePrice": "200",
             "Discount": "20 % OFF",
             "shipper": "Shippping Charge &#8377;",
-            "ShippingCharge": ""
+            "ShippingCharge": "60"
         },
         {
             "srno": "135",
