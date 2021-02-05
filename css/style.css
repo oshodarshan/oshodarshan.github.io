@@ -124,8 +124,13 @@ nav .navbar-nav li a:hover {
 .heading-section {
     height: 100vh;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 100px 20px;
     background-color: #e6e6e6;
@@ -171,7 +176,9 @@ nav .navbar-nav li a:hover {
 
 .heading-image img {
     border-radius: 20px;
+    -webkit-box-shadow: 10px 14px 26px -9px rgba(0, 0, 0, 0.93);
     box-shadow: 10px 14px 26px -9px rgba(0, 0, 0, 0.93);
+    -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
     cursor: pointer;
     width: 100%;
@@ -185,6 +192,8 @@ nav .navbar-nav li a:hover {
     width: 450px;
     border-radius: 57px;
     background: #1d1d1d;
+    -webkit-box-shadow: inset -5px -5px 21px #0c0c0c,
+            inset 5px 5px 21px #2e2e2e;
     box-shadow: inset -5px -5px 21px #0c0c0c,
             inset 5px 5px 21px #2e2e2e;
     background-color: black;
@@ -215,8 +224,24 @@ nav .navbar-nav li a:hover {
     padding: 3px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    -webkit-animation: animatedArrow 2s infinite;
     animation: animatedArrow 2s infinite;
     cursor: pointer;
+}
+
+@-webkit-keyframes animatedArrow {
+    0% {
+        bottom: 40px;
+    }
+
+    30% {
+        bottom: 25px;
+        border-color: red;
+    }
+
+    100% {
+        bottom: 40px;
+    }
 }
 
 @keyframes animatedArrow {
@@ -312,8 +337,8 @@ nav .navbar-nav li a:hover {
 }
 
 .about-content div img {
-    width: 30vw;
-    height: 40vh;
+    width: 55%;
+    
 }
 
 .left-about {
@@ -474,6 +499,7 @@ nav .navbar-nav li a:hover {
 .best-seller {
     height: 100vh;
     width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(6, 6, 7, 0.6)), to(rgba(15, 23, 26, 0.6))), url("../images/feature_books_bg.jpg");
     background: linear-gradient(rgba(6, 6, 7, 0.6), rgba(15, 23, 26, 0.6)), url("../images/feature_books_bg.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -490,6 +516,7 @@ nav .navbar-nav li a:hover {
     text-transform: uppercase;
     color: white;
     cursor: pointer;
+    -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
 }
 
@@ -499,10 +526,17 @@ nav .navbar-nav li a:hover {
 }
 
 .books-show {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     justify-items: center;
     padding: 30px;
@@ -520,25 +554,10 @@ nav .navbar-nav li a:hover {
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 5s ease infinite;
-    -moz-animation: AnimationName 5s ease infinite;
     animation: AnimationName 5s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-    0% {
-        background-position: 0% 7%
-    }
-
-    50% {
-        background-position: 100% 94%
-    }
-
-    100% {
-        background-position: 0% 7%
-    }
-}
-
-@-moz-keyframes AnimationName {
     0% {
         background-position: 0% 7%
     }
@@ -577,7 +596,10 @@ nav .navbar-nav li a:hover {
 }
 
 .cost {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -605,6 +627,7 @@ nav .navbar-nav li a:hover {
     background: #DE354C;
     height: 28px;
     width: 28px;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
@@ -618,6 +641,7 @@ nav .navbar-nav li a:hover {
     background: #DE354C;
     color: white;
     text-align: center;
+    -webkit-box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
     box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -633,6 +657,7 @@ nav .navbar-nav li a:hover {
     color: white;
     padding: 20px;
     border-radius: 20px;
+    -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
 }
 
@@ -1008,13 +1033,22 @@ input[type=number] {
 }
 
 .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .content-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -1026,6 +1060,7 @@ input[type=number] {
 .content-child a {
     text-transform: capitalize;
     margin: 5px;
+    -webkit-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out;
 }
 
@@ -1044,49 +1079,26 @@ input[type=number] {
     text-align: center;
 }
 
+.social-links p{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
 .social-links a {
     margin: 10px;
     font-size: 20px;
     border: 2px solid white;
     padding: 10px;
     border-radius: 50%;
+    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
-.social-links a:nth-child(1):hover {
-    color: #4267B2;
-    border: 2px solid #1e5f74;
-}
-
-.social-links a:nth-child(2):hover {
-    color: #fb3958;
-    border: 2px solid #fb3958;
-}
-
-.social-links a:nth-child(3):hover {
+.social-links a:hover {
     color: #25D366;
     border: 2px solid #25D366;
 }
 
-.social-links a:nth-child(4):hover {
-    color: #738ADB;
-    border: 2px solid #738ADB;
-}
-
-.social-links a:nth-child(5):hover {
-    color: #0088CC;
-    border: 2px solid #0088CC;
-}
-
-.social-links a:nth-child(6):hover {
-    color: #0F9D58;
-    border: 2px solid #0F9D58;
-}
-
-.social-links a:nth-child(7):hover {
-    color: #00B2FF;
-    border: 2px solid #00B2FF;
-}
 
 .copyright {
     text-align: center;
