@@ -1383,7 +1383,7 @@ $(document).ready(function () {
         },
         {
             "srno": "93",
-            "ImageURL": "bookImages/comdey.webp",
+            "ImageURL": "bookImages/comedy.webp",
             "EnglishBookTitleName": "FROM TRAGEDY TO COMEDY",
             "Publication": "Zorba",
             "Subject": "MULLA NASRUDIN",
