@@ -1620,6 +1620,51 @@ $(document).ready(function () {
             "Discount": "20% OFF",
             "shipper": "Shippping Charge &#8377;",
             "SHIPPING": "60"
+        },
+        {
+            "srno": "109",
+            "ImageURL": "https://images-na.ssl-images-amazon.com/images/I/41pUnLB74wL._SX336_BO1,204,203,200_.jpg",
+            "EnglishBookTitleName": "The Book Of Wisdom",
+            "Publication": "Osho  International",
+            "Subject": "Buddha & Buddhist Master",
+            "Cover": "PB",
+            "MAX": "MRP &#8377;",
+            "MRP": "600",
+            "sell": "Sale Price &#8377;",
+            "SALEPRICE": "480",
+            "Discount": "20% OFF",
+            "shipper": "Shippping Charge &#8377;",
+            "SHIPPING": "90"
+        },
+        {
+            "srno": "110",
+            "ImageURL": "https://images-na.ssl-images-amazon.com/images/I/41P8jsQOrxL._SX333_BO1,204,203,200_.jpg",
+            "EnglishBookTitleName": "The God Cospiracy",
+            "Publication": "Osho International",
+            "Subject": "Meditation",
+            "Cover": "PB",
+            "MAX": "MRP &#8377;",
+            "MRP": "600",
+            "sell": "Sale Price &#8377;",
+            "SALEPRICE": "480",
+            "Discount": "20% OFF",
+            "shipper": "Shippping Charge &#8377;",
+            "SHIPPING": "90"
+        },
+        {
+            "srno": "111",
+            "ImageURL": "https://images-na.ssl-images-amazon.com/images/I/419-FFIlB5L._SX330_BO1,204,203,200_.jpg",
+            "EnglishBookTitleName": "The Mustard Seed",
+            "Publication": "Osho International",
+            "Subject": "Jesus and  Chrstian Mystics",
+            "Cover": "PB",
+            "MAX": "MRP &#8377;",
+            "MRP": "600",
+            "sell": "Sale Price &#8377;",
+            "SALEPRICE": "480",
+            "Discount": "20% OFF",
+            "shipper": "Shippping Charge &#8377;",
+            "SHIPPING": "90"
         }
 ];
     $("#kitabe").mirandajs(oshoBooks);
