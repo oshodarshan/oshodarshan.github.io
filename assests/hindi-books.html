@@ -34,7 +34,7 @@
 
     <link href="../css/fonts.css" rel="stylesheet">
     <link rel="icon" href="../images/sign.png">
-    
+
     <!-- Google Analystics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1JHPC7DJCR"></script>
 
@@ -42,7 +42,7 @@
 
 <body>
 
-   <nav class="navbar navbar-expand-md navbar-custom navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-custom navbar-dark fixed-top">
         <a class="navbar-brand" href="#home"><span>O</span>sho <span>D</span>arshan</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -53,13 +53,7 @@
                     <a class="nav-link" href="../index.html#home">home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html#about">about</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html#offers">books</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html#contact">contact</a>
+                    <a class="nav-link" href="how_to_buy.html">how to buy</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="payments.html">payments</a>
@@ -67,47 +61,53 @@
             </ul>
         </div>
     </nav>
-    
-    
-   <section class="book-list" id="up">
-          <div class="imp-message">
-           <p>For order above Rs.2000, <i class="fas fa-plane"></i> shipping is absolutely free.</p>
-       </div>
-           <div class="finding">
+
+
+    <section class="book-list" id="up">
+        <div class="imp-message">
+            <p>For order above Rs.2000, <i class="fas fa-plane"></i> shipping is absolutely free.</p>
+        </div>
+        <div class="finding">
             <input type="search" id="searchbooks" placeholder="Search Books" onkeypress="findBookonEnter()" autofocus>
             <button type="submit" onclick="searchbook()"><i class="fas fa-search"></i></button>
         </div>
-         <p class="check-list">Also Check <a href="english-books.html">English List</a>.</p>
+        <p class="check-list">Also Check <a href="english-books.html">English List</a>.</p>
         <div class="book-cover">
             <table class="books" id="kitabe">
-               <tr class="bt">
-                   <td><p class="discount">[[Discount]]</p>
-                <img src="[[ImageUrl]]" alt="book image not found"></td>
-                <td><div class="book-det">
-                    <h3>[[HINDIBOOKSTITLENAME]]</h3>
-                    <p>[[Publication]]</p>
-                    <p>[[SUBJECT]]</p>
-                    <p>[[COVER]]</p>
-                </div></td>
-                <td><div class="price">
-                    <p class="mrp">[[MAX]] <span>[[MRP]]</span></p>
-                    <p class="sp">[[sell]] <span>[[SalePrice]]</span></p>
-                    <p class="ship-charge">[[shipper]] <span>[[ShippingCharge]]</span></p>
-                </div></td>
-               </tr>
+                <tr class="bt">
+                    <td>
+                        <p class="discount">[[Discount]]</p>
+                        <img src="[[ImageUrl]]" alt="book image not found">
+                    </td>
+                    <td>
+                        <div class="book-det">
+                            <h3>[[HINDIBOOKSTITLENAME]]</h3>
+                            <p>[[Publication]]</p>
+                            <p>[[SUBJECT]]</p>
+                            <p>[[COVER]]</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="price">
+                            <p class="mrp">[[MAX]] <span>[[MRP]]</span></p>
+                            <p class="sp">[[sell]] <span>[[SalePrice]]</span></p>
+                            <p class="ship-charge">[[shipper]] <span>[[ShippingCharge]]</span></p>
+                        </div>
+                    </td>
+                </tr>
             </table>
         </div>
-         <p class="check-list">Also Check <a href="english-books.html">English List</a>.</p>
-    
+        <p class="check-list">Also Check <a href="english-books.html">English List</a>.</p>
+
 
     </section>
-   
-  
+
+
     <footer class="foot">
         <div class="content">
             <div class="content-child">
                 <h2>information</h2>
-                <a href="../index.html"#about>about us</a>
+                <a href="../index.html" #about>about us</a>
                 <a href="how_to_buy.html">how to buy</a>
                 <a href="payments.html">payment methods</a>
                 <a href="site-map.html">site map</a>
@@ -132,7 +132,7 @@
         </div>
 
         <div class="social-links">
-            <p>chat with us on<a href="https://wa.me/message/3IBJVB3LZO7WB1"><i class="fab fa-whatsapp" title="whatsapp"></i></a></p>     
+            <p>chat with us on<a href="https://wa.me/message/3IBJVB3LZO7WB1"><i class="fab fa-whatsapp" title="whatsapp"></i></a></p>
         </div>
 
         <p class="copyright"><a href="#">oshodarshan.in</a> &copy; 2021</p>
@@ -186,9 +186,13 @@
             </div>
         </div>
     </footer>
-    
 
-    <a href="#up"><div class="backtotop"><div></div></div></a>
+
+    <a href="#up">
+        <div class="backtotop">
+            <div></div>
+        </div>
+    </a>
 
     <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -198,5 +202,7 @@
     <script src="../script/script.js"></script>
     <script src="../script/hindi.js"></script>
     <script src="../script/jquery.miranda.min.js"></script>
-    
-</body></html>
+
+</body>
+
+</html>
