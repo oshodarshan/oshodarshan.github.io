@@ -260,6 +260,71 @@ nav .navbar-nav li a:hover {
 }
 
 /*------------------------------
+         About Osho Section
+------------------------------*/
+
+.about-osho-life{
+    height: auto;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    background-color: #932432;
+    padding: 80px 50px;
+    z-index: 9999;
+}
+
+.osho-image img{
+    height: 58vh;
+    width: 25vw;
+    margin: 10px 30px;
+    border-radius: 200px 0px 200px 0px;
+    -moz-border-radius: 200px 0px 200px 0px;
+    -webkit-border-radius: 200px 0px 200px 0px;
+    border: 8px solid #1d1d1d;
+    box-shadow: -15px 10px 18px -1px rgba(29,29,29,1);
+}
+
+.about-osho-text{
+    margin-left: 20px;
+}
+
+.about-osho-text h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 2px solid white;
+    font-weight: 900;
+    font-size: 42px;
+}
+
+.about-osho-text p{
+    text-align: justify;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.about-osho-text a{
+    text-transform: capitalize;
+    font-size: 22px;
+    padding: 25px;
+    background-color: #1d1d1d;
+    color: red;
+    border-radius: 30px;
+    margin: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-osho-text a:hover{
+    background-color: red;
+    color: #1d1d1d;
+    text-decoration: none;
+}
+
+/*------------------------------
          About section
 ------------------------------*/
 
@@ -587,6 +652,7 @@ nav .navbar-nav li a:hover {
 
 .product-card h3 {
     font-weight: bolder;
+    text-transform: capitalize;
 }
 
 
