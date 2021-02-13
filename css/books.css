@@ -2,6 +2,11 @@ body {
     overflow-x: auto;
 }
 
+::selection{
+    background-color: black;
+    color: white;
+}
+
 .book-list {
     padding: 100px 40px;
     background-color: ;
