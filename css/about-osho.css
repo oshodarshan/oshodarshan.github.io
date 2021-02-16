@@ -1,0 +1,31 @@
+.osho-complete-about{
+    padding: 80px;
+}
+
+.osho-complete-about h2{
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    font-size: 42px;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 4px solid black;
+    cursor: pointer;
+}
+
+.osho-complete-about img{
+    width: 55vw;
+    margin: 25px 0;
+    border-radius: 20px;
+    box-shadow: 20px 13px 23px -8px rgba(0,0,0,0.74);
+    -webkit-box-shadow: 20px 13px 23px -8px rgba(0,0,0,0.74);
+    -moz-box-shadow: 20px 13px 23px -8px rgba(0,0,0,0.74);
+}
+
+.osho-complete-about p{
+    padding: 10px 0;
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 18px;
+}
