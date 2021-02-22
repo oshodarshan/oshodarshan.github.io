@@ -1,6 +1,15 @@
 $(document).ready(function () {
     fetch('./oshoBooks.json')
-    $("#kitabe").mirandajs(oshoBooks);
+    
+    function filter(data , categ){
+        var result =[];
+        if(categ)
+            result = data.filter(function (item) {return item.Category == categ});
+        return result;
+    }
+    
+    var data1 = filter(oshoBooks, 'Meera')
+    $("#kitabe").mirandajs(data1);
 });
 
 /* search by category collabisable bar */
