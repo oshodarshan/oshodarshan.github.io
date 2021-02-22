@@ -129,6 +129,77 @@ td {
 }
 
 /*------------------------------
+        search by list
+------------------------------*/
+
+.collap-search {
+  background-color: #1d1d1d;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.active-search, .collap-search:hover {
+  background-color: black;
+}
+
+.collap-search:after {
+  content: '\25BC';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active-search:after {
+  content: "\25B2";
+}
+
+.search-content {
+  padding: 0px 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background-color: #f1f1f1;
+}
+
+.search-content a{
+    color: black;
+    text-transform: uppercase;
+    padding-right: 10px;
+    margin: 5px;
+    font-size: 18px;
+    border-right: 2px solid black;
+}
+
+.search-content a:last-child{
+    border-right: none;
+}
+
+.search-content a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.filer-search{
+    margin-bottom: 20px;
+}
+
+.active-fill{
+    color: red;
+}
+
+.hidden{
+    display: none;
+}
+
+/*------------------------------
         footer
 ------------------------------*/
 
