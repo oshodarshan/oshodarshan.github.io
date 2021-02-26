@@ -352,7 +352,9 @@
 
 
 @media all and (max-width: 650px) {
-  
+    .osho-image img{
+        width: 55vw;
+    }
     
     .heading-section {
         height: auto;
@@ -483,7 +485,7 @@
     }
     
     .osho-image img{
-        width: 35vw;
+        width: 50vw;
     }
 }
 
@@ -491,6 +493,9 @@
 @media all and (max-width: 480px) {
     .about-section{
         height: 110vh;
+    }
+    .osho-image img{
+        width: 55vw;
     }
     .about-content{
         height: auto;
@@ -546,7 +551,8 @@
         margin: 2px;
     }
     .osho-image img{
-        width: 40vw;
+        width: 65vw;
+        height: 65vh;
     }
 }
 

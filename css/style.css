@@ -208,6 +208,15 @@ nav .navbar-nav li a:hover {
     color: red;
 }
 
+#ship-box{
+    position: fixed;
+    bottom: 0;
+}
+
+.w3-panel{
+    z-index: 9999;
+}
+
 
 #arrow-down {
     position: absolute;
