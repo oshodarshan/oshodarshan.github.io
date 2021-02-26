@@ -625,7 +625,7 @@ oshoBooks = [
     },
     {
         "srno": "40",
-        "ImageUrl": "bookImages/jukh.webphttps://raw.githubusercontent.com/oshodarshan/oshodarshan/main/assests/",
+        "ImageUrl": "https://raw.githubusercontent.com/oshodarshan/oshodarshan/main/assests/bookImages/jukh.webp",
         "HINDIBOOKSTITLENAME": "JHUK AYEE BADARIYA SAWAN KI",
         "Category": "Meera",
         "Publication": "Osho Media International",
@@ -2435,7 +2435,7 @@ oshoBooks = [
         "srno": "153",
         "ImageUrl": "https://raw.githubusercontent.com/oshodarshan/oshodarshan/main/assests/bookImages/dhai.webp",
         "HINDIBOOKSTITLENAME": "DHAI AKHAR PREM KA",
-        "Category": "Sukti",
+        "Category": "patra sankalan",
         "Publication": "Sadhana publication",
         "SUBJECT": "PATRA-SANKALAN",
         "COVER": "PB",

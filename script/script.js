@@ -218,6 +218,9 @@ animateValue("value-count1", 0, 100, 2000);
 animateValue("value-count2", 0, 5, 2000);
 
 
+$('select').selectpicker();
+    
+
 /* Google Analystics */
 
 window.dataLayer = window.dataLayer || [];
