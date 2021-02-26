@@ -34,7 +34,7 @@
 
     <link href="../css/fonts.css" rel="stylesheet">
     <link rel="icon" href="../images/sign.png">
-    
+
     <!-- Google Analystics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1JHPC7DJCR"></script>
 
@@ -42,7 +42,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-custom navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-custom navbar-dark fixed-top">
         <a class="navbar-brand" href="#home"><span>O</span>sho <span>D</span>arshan</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -64,66 +64,74 @@
 
 
     <section class="book-list" id="up">
-       <div class="imp-message">
-           <p>For order above Rs.2000, <i class="fas fa-plane"></i> shipping is absolutely free.</p>
-       </div>
+        <div class="imp-message">
+            <p>For order above Rs.2000, <i class="fas fa-plane"></i> shipping is absolutely free.</p>
+        </div>
         <div class="finding">
             <input type="search" id="searchbooks" placeholder="Search Books" onkeypress="findBookonEnter()" autofocus>
             <button type="submit" onclick="searchbook()"><i class="fas fa-search"></i></button>
         </div>
-        
+
         <div class="filer-search">
-            <button class="collap-search">search by categories</button>
-            <div class="search-content portfolio-filter">
-                <a href="https://oshodarshan.in/assests/english-books.html" data-filter="all" class="fill">all</a>
-                <a href="englishcat/guides.html" class="fill" data-filter="Krishna">guides to meditation</a>
-                <a href="englishcat/tarot.html" data-filter="Mahaveer" class="fill">tarot cards</a>
-                <a href="englishcat/scince.html" data-filter="SantVani" class="fill">the scince of the inner</a>
-                <a href="englishcat/published.html" data-filter="Kabir" class="fill">published letter</a>
-                <a href="englishcat/autobiographic.html" data-filter="AntrangVarta" class="fill">autobiographic</a>
-                <a href="englishcat/onetoone.html" data-filter="Dhyan_Sadhana" class="fill">one to one talks with osho</a>
-                <a href="englishcat/responses.html" data-filter="Upanishad" class="fill">responses to questions</a>
-                <a href="englishcat/tantra.html" data-filter="Yoga" class="fill">tantra</a>
-                <a href="englishcat/tao_masters.html" data-filter="Meera" class="fill">tao masters</a>
-                <a href="englishcat/osho_vision.html" data-filter="Vividh" class="fill">osho's vision for the world</a>
-                <a href="englishcat/yoga.html" data-filter="Prasnotar" class="fill">yoga</a>
-                <a href="englishcat/buddha.html" data-filter="Rajneeti_Samaj" class="fill">buddha and buddhist masters
-                </a>
-                <a href="englishcat/zen_master.html" data-filter="KahaniSangrah" class="fill">zen masters</a>
-                <a href="englishcat/zen_experience.html" data-filter="Zen_Sufi_Kahani" class="fill">zen experience</a>
-                <a href="englishcat/jesus.html" data-filter="Buddha" class="fill">jesus and christian mystics</a>
-                <a href="englishcat/western.html" data-filter="Ashtavakra" class="fill">western mystics</a>
-                <a href="englishcat/indian.html" data-filter="AtamKatha" class="fill">indian mystics</a>
-                <a href="englishcat/kabir.html" data-filter="Sufi" class="fill">kabir</a>
-                <a href="englishcat/upnishad.html" data-filter="Kabir" class="fill">upnishad</a>
-                <a href="englishcat/zen.html" data-filter="PatraSanklan" class="fill">zen</a>
-                <a href="englishcat/darshan.html" data-filter="Tao" class="fill">darshan dairies</a>
-                <a href="englishcat/jokes.html" data-filter="Gurjdieff" class="fill">jokes mullanassrudeen</a>
-                <a href="englishcat/mantra.html" data-filter="Tantra" class="fill">mantra series</a>
-                <a href="englishcat/zen_masrets.html" data-filter="ChuangTzu" class="fill">zen masrets</a>
-                <a href="englishcat/kirhsna.html" data-filter="Sukti" class="fill">krishna</a>
-                <a href="englishcat/education.html" data-filter="BooksAboutOsho" class="fill">education</a>
+            <div class="dhundho">
+                <h2>search by category</h2>
+                <select onchange="location = this.value;">
+                    <option value="https://oshodarshan.in/assests/english-books.html" selected="true">all</option>
+                    <option value="englishcat/guides.html">guides to meditation</option>
+                    <option value="englishcat/tarot.html">tarot cards</option>
+                    <option value="englishcat/scince.html">the scince of the inner</option>
+                    <option value="englishcat/published.html">published letter</option>
+                    <option value="englishcat/autobiographic.html">autobiographic</option>
+                    <option value="englishcat/onetoone.html">one to one talks with osho</option>
+                    <option value="englishcat/responses.html">responses to questions</option>
+                    <option value="englishcat/tantra.html">tantra</option>
+                    <option value="englishcat/tao_masters.html">tao masters</option>
+                    <option value="englishcat/osho_vision.html">osho's vision for the world</option>
+                    <option value="englishcat/yoga.html">yoga</option>
+                    <option value="englishcat/buddha.html">buddha and buddhist masters
+                    </option>
+                    <option value="englishcat/zen_master.html">zen masters</option>
+                    <option value="englishcat/zen_experience.html">zen experience</option>
+                    <option value="englishcat/jesus.html">jesus and christian mystics</option>
+                    <option value="englishcat/western.html">western mystics</option>
+                    <option value="englishcat/indian.html">indian mystics</option>
+                    <option value="englishcat/kabir.html">kabir</option>
+                    <option value="englishcat/upnishad.html">upnishad</option>
+                    <option value="englishcat/zen.html">zen</option>
+                    <option value="englishcat/darshan.html">darshan dairies</option>
+                    <option value="englishcat/jokes.html">jokes mullanassrudeen</option>
+                    <option value="englishcat/mantra.html">mantra series</option>
+                    <option value="englishcat/zen_masrets.html">zen masrets</option>
+                    <option value="englishcat/kirhsna.html">krishna</option>
+                    <option value="englishcat/education.html">education</option>
+                </select>
             </div>
         </div>
-        
+
         <p class="check-list">Also Check <a href="hindi-books.html">Hindi List</a>.</p>
         <div class="book-cover">
             <table class="books" id="kitabe">
-               <tr class="bt">
-                   <td><p class="discount">[[Discount]]</p>
-                <img src="[[ImageURL]]" alt="book image not found"></td>
-                <td><div class="book-det">
-                    <h3>[[EnglishBookTitleName]]</h3>
-                    <p>[[Publication]]</p>
-                    <p>[[Subject]]</p>
-                    <p>[[Cover]]</p>
-                </div></td>
-                <td><div class="price">
-                    <p class="mrp">[[MAX]]<span>[[MRP]]</span></p>
-                    <p class="sp">[[sell]]<span>[[SALEPRICE]]</span></p>
-                    <p class="ship-charge">[[shipper]]<span>[[SHIPPING]]</span></p>
-                </div></td>
-               </tr>
+                <tr class="bt">
+                    <td>
+                        <p class="discount">[[Discount]]</p>
+                        <img src="[[ImageURL]]" alt="book image not found">
+                    </td>
+                    <td>
+                        <div class="book-det">
+                            <h3>[[EnglishBookTitleName]]</h3>
+                            <p>[[Publication]]</p>
+                            <p>[[Subject]]</p>
+                            <p>[[Cover]]</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="price">
+                            <p class="mrp">[[MAX]]<span>[[MRP]]</span></p>
+                            <p class="sp">[[sell]]<span>[[SALEPRICE]]</span></p>
+                            <p class="ship-charge">[[shipper]]<span>[[SHIPPING]]</span></p>
+                        </div>
+                    </td>
+                </tr>
             </table>
         </div>
 
@@ -132,15 +140,15 @@
     </section>
 
 
-   <footer class="foot1">
+    <footer class="foot1">
         <div class="content1">
             <div class="content-child1">
                 <h2>information</h2>
-                <a href="../index.html"#about>about us</a>
+                <a href="../index.html" #about>about us</a>
                 <a href="how_to_buy.html">how to buy</a>
                 <a href="payments.html">payment methods</a>
                 <a href="site-map.html">site map</a>
-                <a href="https://satgurubooksstore.oshodarshan.in">satguru books store</a>
+                <a href="https://oshodarshan.in/assests/maala.html">maala</a>
             </div>
             <div class="content-child1">
                 <h2>quick links</h2>
@@ -161,7 +169,7 @@
         </div>
 
         <div class="social-links">
-            <p>chat with us on<a href="https://wa.me/message/3IBJVB3LZO7WB1"><i class="fab fa-whatsapp" title="whatsapp"></i></a></p>     
+            <p>chat with us on<a href="https://wa.me/message/3IBJVB3LZO7WB1"><i class="fab fa-whatsapp" title="whatsapp"></i></a></p>
         </div>
 
         <p class="copyright"><a href="#">oshodarshan.in</a> &copy; 2021</p>
@@ -215,9 +223,13 @@
             </div>
         </div>
     </footer>
-    
-    <a href="#up"><div class="backtotop"><div></div></div></a>
-    
+
+    <a href="#up">
+        <div class="backtotop">
+            <div></div>
+        </div>
+    </a>
+
     <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
@@ -228,4 +240,6 @@
     <script src="../script/oshoBooksEng.json"></script>
     <script src="../script/jquery.miranda.min.js"></script>
 
-</body></html>
+</body>
+
+</html>

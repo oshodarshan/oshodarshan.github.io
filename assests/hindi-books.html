@@ -36,6 +36,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
     <link rel="icon" href="../images/sign.png">
 
+
     <!-- Google Analystics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1JHPC7DJCR"></script>
 
@@ -72,67 +73,69 @@
             <input type="search" id="searchbooks" placeholder="Search Books" onkeypress="findBookonEnter()" autofocus>
             <button type="submit" onclick="searchbook()"><i class="fas fa-search"></i></button>
         </div>
+
         <div class="filer-search">
-            <button class="collap-search">search by categories</button>
-            <div class="search-content portfolio-filter">
-                <a href="https://oshodarshan.in/assests/hindi-books.html" data-filter="all" class="fill">all</a>
-                <a href="hindicat/krishna.html" class="fill" data-filter="Krishna">krishna</a>
-                <a href="hindicat/mahaveer.html" data-filter="Mahaveer" class="fill">mahaveer</a>
-                <a href="hindicat/santvani.html" data-filter="SantVani" class="fill">sant vani</a>
-                <a href="hindicat/kabir.html" data-filter="Kabir" class="fill">kabir</a>
-                <a href="hindicat/antrangvatra.html" data-filter="AntrangVarta" class="fill">antrang vatra</a>
-                <a href="hindicat/dhyan_sadhana.html" data-filter="Dhyan_Sadhana" class="fill">dhayan / sadhana</a>
-                <a href="hindicat/upnishad.html" data-filter="Upanishad" class="fill">upnishad</a>
-                <a href="hindicat/yoga.html" data-filter="Yoga" class="fill">yoga</a>
-                <a href="hindicat/meera.html" data-filter="Meera" class="fill">meera</a>
-                <a href="hindicat/vividh.html" data-filter="Vividh" class="fill">vividh</a>
-                <a href="hindicat/prasnotar.html" data-filter="Prasnotar" class="fill">prasonatar</a>
-                <a href="hindicat/rajneeti_samaj.html" data-filter="Rajneeti_Samaj" class="fill">rajneeti aur samaj
-                </a>
-                <a href="hindicat/kahanisangrah.html" data-filter="KahaniSangrah" class="fill">kahani sangrah</a>
-                <a href="hindicat/zen_sufi_kahani.html" data-filter="Zen_Sufi_Kahani" class="fill">zen sufi kahani</a>
-                <a href="hindicat/buddha.html" data-filter="Buddha" class="fill">buddha</a>
-                <a href="hindicat/ashtavakra.html" data-filter="Ashtavakra" class="fill">ashtavakra</a>
-                <a href="hindicat/atamkatha.html" data-filter="AtamKatha" class="fill">atam katha</a>
-                <a href="hindicat/sufi.html" data-filter="Sufi" class="fill">sufi</a>
-                <a href="hindicat/kabir.html" data-filter="Kabir" class="fill">kabir</a>
-                <a href="hindicat/patrasanklan.html" data-filter="PatraSanklan" class="fill">patra sankalan</a>
-                <a href="hindicat/tao.html" data-filter="Tao" class="fill">tao</a>
-                <a href="hindicat/gurjdeff.html" data-filter="Gurjdieff" class="fill">gurjdieff</a>
-                <a href="hindicat/tantra.html" data-filter="Tantra" class="fill">tantra</a>
-                <a href="hindicat/chuangtzu.html" data-filter="ChuangTzu" class="fill">chuang tzu</a>
-                <a href="hindicat/sukti.html" data-filter="Sukti" class="fill">sukti</a>
-                <a href="hindicat/booksaboutosho.html" data-filter="BooksAboutOsho" class="fill">books about osho</a>
-                <a href="hindicat/jokes.html" data-filter="Jokes" class="fill">jokes</a>
+            <div class="dhundho">
+                <h2>search by category</h2>
+                <select onchange="location = this.value;">
+                    <option value="https://oshodarshan.in/assests/hindi-books.html">all</option>
+                    <option value="hindicat/krishna.html">krishna</option>
+                    <option value="hindicat/mahaveer.html">mahaveer</option>
+                    <option value="hindicat/santvani.html">sant vani</option>
+                    <option value="hindicat/kabir.html">kabir</option>
+                    <option value="hindicat/antrangvatra.html">antrang vatra</option>
+                    <option value="hindicat/dhyan_sadhana.html">dhayan / sadhana</option>
+                    <option value="hindicat/upnishad.html">upnishad</option>
+                    <option value="hindicat/yoga.html">yoga</option>
+                    <option value="hindicat/meera.html">meera</option>
+                    <option value="hindicat/vividh.html">vividh</option>
+                    <option value="hindicat/prasnotar.html">prasonatar</option>
+                    <option value="hindicat/rajneeti_samaj.html">rajneeti aur samaj
+                        </option>
+                    <option value="hindicat/kahanisangrah.html">kahani sangrah</option>
+                    <option value="hindicat/zen_sufi_kahani.html">zen sufi kahani</option>
+                    <option value="hindicat/buddha.html">buddha</option>
+                    <option value="hindicat/ashtavakra.html">ashtavakra</option>
+                    <option value="hindicat/atamkatha.html">atam katha</option>
+                    <option value="hindicat/sufi.html">sufi</option>
+                    <option value="hindicat/patrasanklan.html">patra sankalan</option>
+                    <option value="hindicat/tao.html">tao</option>
+                    <option value="hindicat/gurjdeff.html">gurjdieff</option>
+                    <option value="hindicat/tantra.html">tantra</option>
+                    <option value="hindicat/chuangtzu.html">chuang tzu</option>
+                    <option value="hindicat/sukti.html">sukti</option>
+                    <option value="hindicat/booksaboutosho.html">books about osho</option>
+                    <option value="hindicat/jokes.html">jokes</option>
+                </select>
             </div>
         </div>
 
         <p class="check-list">Also Check <a href="english-books.html">English List</a>.</p>
         <div class="book-cover" id="AllBooks">
-                <table class="books" id="kitabe">
-                    <tr class="bt" id="categorySearch">
-                        <td>
-                            <p class="discount">[[Discount]]</p>
-                            <a href="[[ImageUrl]]" class="gallery-image"><img src="[[ImageUrl]]" alt="book image not found"></a>
-                        </td>
-                        <td>
-                            <div class="book-det">
-                                <h3>[[HINDIBOOKSTITLENAME]]</h3>
-                                <p>[[Publication]]</p>
-                                <p>[[SUBJECT]]</p>
-                                <p>[[COVER]]</p>
-                                <!--<p class="categories">[[Category]]</p>-->
-                            </div>
-                        </td>
-                        <td>
-                            <div class="price">
-                                <p class="mrp">[[MAX]] <span>[[MRP]]</span></p>
-                                <p class="sp">[[sell]] <span>[[SalePrice]]</span></p>
-                                <p class="ship-charge">[[shipper]] <span>[[ShippingCharge]]</span></p>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+            <table class="books" id="kitabe">
+                <tr class="bt" id="categorySearch">
+                    <td>
+                        <p class="discount">[[Discount]]</p>
+                        <a href="[[ImageUrl]]" class="gallery-image"><img src="[[ImageUrl]]" alt="book image not found"></a>
+                    </td>
+                    <td>
+                        <div class="book-det">
+                            <h3>[[HINDIBOOKSTITLENAME]]</h3>
+                            <p>[[Publication]]</p>
+                            <p>[[SUBJECT]]</p>
+                            <p>[[COVER]]</p>
+                            <!--<p class="categories">[[Category]]</p>-->
+                        </div>
+                    </td>
+                    <td>
+                        <div class="price">
+                            <p class="mrp">[[MAX]] <span>[[MRP]]</span></p>
+                            <p class="sp">[[sell]] <span>[[SalePrice]]</span></p>
+                            <p class="ship-charge">[[shipper]] <span>[[ShippingCharge]]</span></p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
 
         <p class="check-list">Also Check <a href="english-books.html">English List</a>.</p>
@@ -149,7 +152,7 @@
                 <a href="how_to_buy.html">how to buy</a>
                 <a href="payments.html">payment methods</a>
                 <a href="site-map.html">site map</a>
-                <a href="https://satgurubooksstore.oshodarshan.in">satguru books store</a>
+                <a href="https://oshodarshan.in/assests/maala.html">maala</a>
             </div>
             <div class="content-child">
                 <h2>quick links</h2>
@@ -234,7 +237,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../script/script.js"></script>
