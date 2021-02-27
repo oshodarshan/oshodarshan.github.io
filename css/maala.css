@@ -1,0 +1,92 @@
+
+.dropdown ul{
+    background-color: #1d1d1d;
+}
+
+.dropdown-menu li{
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.maala-card{
+    background-color: #1d1d1d;
+    margin: 100px 50px;
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+}
+
+.product-maala-box{
+    margin: 30px;
+}
+
+.product-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-flex img{
+    width: 22vw;
+    margin: 20px;
+}
+
+.shipping-box{
+    display: flex;   
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ship-box{
+    border: 2px solid white;
+    padding: 10px 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.ship-box:hover{
+    color: red;
+    border: 2px solid red;
+    margin-top: -8px;
+}
+
+.ship-box p{
+    text-transform: uppercase;
+}
+
+.buy-btn{
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: red;
+    border: 4px solid red;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buy-btn:hover{
+    color: white;
+    border: 4px solid white;
+}
+
+.right-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.maala-details h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.maala-details h3 span{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: red;
+}
