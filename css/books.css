@@ -174,14 +174,14 @@ td {
         footer
 ------------------------------*/
 
-.foot1 {
+.foot {
     height: auto;
     padding: 40px 60px;
     background-color: #1d1d1d;
     color: white;
 }
 
-.content1 {
+.content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -191,7 +191,7 @@ td {
     flex-wrap: wrap;
 }
 
-.content-child1 {
+.content-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -206,14 +206,15 @@ td {
     font-weight: 600;
 }
 
-.content-child1 a {
+.content-child a {
     text-transform: capitalize;
     margin: 5px;
+    color: white;
     -webkit-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out;
 }
 
-.content-child1 a:hover {
+.content-child a:hover {
     text-decoration: none;
     color: red;
 }
@@ -222,15 +223,16 @@ td {
 
 .content-child-flex1 a {}
 
-.social-links1 {
+.social-links {
     margin: 20px;
     padding: 10px;
     text-align: center;
 }
 
-.social-links1 a {
+.social-links a {
     margin: 10px;
     font-size: 20px;
+    color: white;
     border: 2px solid white;
     padding: 10px;
     border-radius: 50%;
@@ -273,12 +275,16 @@ td {
     border: 2px solid #00B2FF;
 }
 
-.copyright1 {
+.copyright {
     text-align: center;
     text-transform: uppercase;
 }
 
-.copyright1 a:hover {
+.copyright a{
+    color: white;
+}
+
+.copyright a:hover {
     color: white;
 }
 
