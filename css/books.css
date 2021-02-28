@@ -1,8 +1,6 @@
-body {
-    overflow-x: auto;
-}
 
-::selection{
+
+::selection {
     background-color: black;
     color: white;
 }
@@ -71,6 +69,12 @@ body {
     padding: 20px;
 }
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
 tr {
     padding: 20px;
     margin: 10px;
@@ -104,13 +108,13 @@ td {
     margin: 5px;
 }
 
-.imp-message p{
+.imp-message p {
     font-size: 24px;
 }
 
 .check-list a {
     color: red;
-    font-size: 20px;    
+    font-size: 20px;
 }
 
 .check-list a:hover {
@@ -132,17 +136,17 @@ td {
         search by list
 ------------------------------*/
 
-.dhundho{
+.dhundho {
     display: flex;
 }
 
-.dhundho h2{
+.dhundho h2 {
     text-transform: uppercase;
     margin-right: 20px;
     font-size: 2.5vw;
 }
 
-.dhundho select{
+.dhundho select {
     text-transform: uppercase;
     width: 30vw;
     background-color: red;
@@ -152,7 +156,7 @@ td {
     border-radius: 10px;
 }
 
-.dhundho select option{
+.dhundho select option {
     text-transform: uppercase;
     background-color: black;
     color: white;
@@ -162,7 +166,7 @@ td {
 }
 
 
-.filer-search{
+.filer-search {
     margin-bottom: 20px;
 }
 
