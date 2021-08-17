@@ -91,7 +91,7 @@
                     <option value="hindicat/vividh.html">vividh</option>
                     <option value="hindicat/prasnotar.html">prasonatar</option>
                     <option value="hindicat/rajneeti_samaj.html">rajneeti aur samaj
-                        </option>
+                    </option>
                     <option value="hindicat/kahanisangrah.html">kahani sangrah</option>
                     <option value="hindicat/zen_sufi_kahani.html">zen sufi kahani</option>
                     <option value="hindicat/buddha.html">buddha</option>
@@ -111,6 +111,7 @@
         </div>
 
         <p class="check-list">Also Check <a href="english-books.html">English List</a>.</p>
+        <!--<p>Click on Plus (+) to Add Book into List</p>
         <div class="book-cover" id="AllBooks" style="overflow-x:auto;">
             <table class="books" id="kitabe">
                 <tr class="bt" id="categorySearch">
@@ -119,23 +120,51 @@
                         <a href="[[ImageUrl]]" class="gallery-image"><img src="[[ImageUrl]]" alt="book image not found"></a>
                     </td>
                     <td>
-                        <div class="book-det">
-                            <h3>[[HINDIBOOKSTITLENAME]]</h3>
+                        <div class="book-det" id="bookDet">
+                            <h3 id="hindiBookTitleName">[[HINDIBOOKSTITLENAME]]</h3>
                             <p>[[Publication]]</p>
                             <p>[[SUBJECT]]</p>
                             <p>[[COVER]]</p>
-                            <!--<p class="categories">[[Category]]</p>-->
+                            <!--<p class="categories">[[Category]]</p>
                         </div>
                     </td>
                     <td>
                         <div class="price">
                             <p class="mrp">[[MAX]] <span>[[MRP]]</span></p>
-                            <p class="sp">[[sell]] <span>[[SalePrice]]</span></p>
-                            <p class="ship-charge">[[shipper]] <span>[[ShippingCharge]]</span></p>
+                            <p class="sp">[[sell]] <span id="sp">[[SalePrice]]</span></p>
+                            <p class="ship-charge">[[shipper]] <span id="ship-charge">[[ShippingCharge]]</span></p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="addList">
+                            <button onclick="addList()">+</button>
                         </div>
                     </td>
                 </tr>
             </table>
+        </div> -->
+        
+        
+        <div class="forDisp" id="kitabe">
+            <div class="pbox">
+                <img src="[[ImageUrl]]" alt="Book Image Not Available">
+                <div class="pdetails">
+                    <div class="pheader">
+                        <h3>[[HINDIBOOKSTITLENAME]] <span class="badge">[[Discount]]</span></h3>
+                        
+                    </div>
+                    <div class="ptypes">
+                        <p>[[Publication]]</p>
+                        <p>[[SUBJECT]]</p>
+                        <p>[[COVER]]</p>
+                    </div>
+                    <div class="pcost">
+                        <p>[[MAX]]<span style="text-decoration: line-through;">[[MRP]]</span></p>
+                        <p>[[sell]]<span>[[SalePrice]]</span></p>
+                        <p>[[shipper]]<span>[[ShippingCharge]]</span></p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <p class="check-list">Also Check <a href="english-books.html">English List</a>.</p>
@@ -143,6 +172,60 @@
 
     </section>
 
+    <div class="makeList hideThis" id="bookListMenu">
+        <h1>my list</h1>
+        <a id="minimize">&#8722;</a>
+        <a id="cross">&times;</a>
+        <div id="mini">
+            <p style="margin-left: 10px;">Create Your Osho Books List and Share Wtih us easily</p>
+            <div class="listContent">
+                <div id="myBook">[[HINDIBOOKSTITLENAME]]</div>
+                <div id="bookQuantity">
+                    <select name="quantity" id="productQuantity" onclick="addList()">
+                        <option value="1" selected=true>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div id="bookPrice">[[SalePrice]]</div>
+                <div id="bookShipPrice">[[ShippingCharge]]</div>
+                <div id="deleteBook"><i class="fas fa-trash-alt" title="Remove This Item"></i></div>
+            </div>
+            <div class="finalPrice"><strong>TOTAL </strong>&#8377; <div id="bookTotalPrice">sample</div>
+            </div>
+            <button onclick="shareList()" data-toggle="modal" data-target="#shareList">share list <i class="fas fa-share"></i></button>
+        </div>
+    </div>
+
+
+    <div id="shareList" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <label for="fullName">Full Name <span style="color: red;">*</span></label> <br>
+                    <input type="text" placeholder="Enter Your Full Name" name="fullName" required> <br>
+                    <label for="email">Email</label> <br>
+                    <input type="email" placeholder="Enter your Email Address" name="email"> <br>
+                    <label for="phone">Phone Number <span style="color: red;">*</span></label> <br>
+                    <input type="number" placeholder="Enter your Phone Number" name="phone" required> <br>
+                    <label for="address">Complete Address <span style="color: red;">*</span></label> <br>
+                    <textarea name="address" id="userAdddress" cols="auto" rows="5" placeholder="Enter your Complete Address" required></textarea> <br>
+                    <p>your created list</p>
+                    <button type="submit" id="submit" data-dismiss="modal">Share <i class="fas fa-share"></i></button>
+                    <button type="reset" data-dismiss="modal">Reset <i class="fas fa-undo"></i></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <footer class="foot">
         <div class="content">
@@ -239,9 +322,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../script/script.js"></script>
     <script src="../script/hindi.js"></script>
     <script src="../script/oshoBooks.json"></script>
     <script src="../script/jquery.miranda.min.js"></script>
+    <script src="../script/makeList.js"></script>
 
 </body></html>
