@@ -83,7 +83,28 @@
     <section class="maala-card">
         <div class="product-maala-box">
             <div class="product-flex">
-                <img src="../images/maala.png" alt="osho maala image" title="osho maala image">
+                <div class="colflex">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../images/maala.png" height="300px" alt="Los Angeles">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/maala121212.png" height="300px" alt="Chicago">
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                </div>
                 <div class="maala-details">
                     <h2>osho mala</h2>
                     <p>
@@ -92,7 +113,7 @@
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
-                        1945 reviews
+                        2310 reviews
                     </p>
                     <h3>₹ 500 + <span>free shipping</span></h3>
                     <!--<div class="shipping-box">
@@ -208,7 +229,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../script/script.js"></script>
     <script>
-        function buy(){
+        function buy() {
             swal("Contact us @ +91-9013697841 to place your order");
         }
     </script>
