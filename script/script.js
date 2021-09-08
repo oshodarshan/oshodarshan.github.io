@@ -156,7 +156,7 @@ function hindipd() {
 }
 
 function engpd() {
-    swal("Osho ka Pushtak Prem", "Coming Soon!");
+    location.replace("https://oshodarshan.in/assests/maala.html");
 }
 
 
